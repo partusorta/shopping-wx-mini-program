@@ -5,5 +5,6 @@
 
  ![image1](https://github.com/partusorta/shopping-wx-mini-program/blob/master/pages/image/screen/3.42.33.png)
  ![image2](https://github.com/partusorta/shopping-wx-mini-program/blob/master/pages/image/screen/3.43.05.png)
- ![image3](https://github.com/partusorta/shopping-wx-mini-program/blob/master/pages/image/screen/3.45.04.png)
- ![image4](https://github.com/ButBueatiful/dotvim/raw/master/screenshots/vim-screenshot.jpg)
+ ![image3](https://github.com/partusorta/shopping-wx-mini-program/blob/master/pages/image/screen/3.53.39.png)
+ ![image4](https://github.com/partusorta/shopping-wx-mini-program/blob/master/pages/image/screen/3.54.03.png)
+ ![image5](https://github.com/partusorta/shopping-wx-mini-program/blob/master/pages/image/screen/3.54.25.png)
