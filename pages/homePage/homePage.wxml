@@ -1,0 +1,60 @@
+<!--pages/homePage/homePage.wxml-->
+<view>
+  <!-- 搜索 -->
+  <view class='search-css'>
+    <view class='searcType-css' bindtap='tapType'>
+      <image src='../image/type.png'></image>
+      <text>分类</text>
+    </view>
+    <view class='inputView-css'>
+      <image src='../image/search.png'></image>
+      <input placeholder='搜索朋友圈的好货'></input>
+    </view>
+  </view>
+  <!-- 搜索end -->
+  <!-- 轮播图 -->
+  <swiper indicator-dots='true' circular='true' indicator-color='#ccc' indicator-active-color='#62C9D8' class='swiper-box'>
+    <block wx:for='{{imgUrls}}' wx:key='{{index}}'>
+      <swiper-item>
+        <image src='{{item.url}}' class='slide-image' mode='aspectFill'></image>
+      </swiper-item>
+    </block>
+  </swiper>
+  <!-- 轮播图end -->
+  <!-- bar -->
+  <view class='bar-css'>
+    <text>商城精选</text>
+  </view>
+  <!-- barend -->
+  <!-- 商品 -->
+  <view class='goodList-css'>
+    <block wx:for='{{goodList}}' wx:key='{{index}}'>
+      <view wx:if="{{index%2 == 0}}" class='goodItem-css' bindtap='tapDetail'>
+        <image src='{{item.url}}' class='goodImg-css'></image>
+        <text>{{item.name}}</text>
+        <view class='bottom-css'>
+          <text>¥{{item.price}}</text>
+        </view>
+      </view>
+      <view wx:else class='goodItem-css' style='margin-left:10rpx;margin-right:20rpx' bindtap='tapDetail'>
+        <image src='{{item.url}}' class='goodImg-css'>{{item.url}}</image>
+        <text>{{item.name}}</text>
+        <view class='bottom-css'>
+          <text>¥{{item.price}}</text>
+        </view>
+      </view>
+
+    </block>
+  </view>
+  <!-- 商品end -->
+  <!-- 登录弹框 -->
+  <view wx:if='{{!hasUserInfo&&canIUse}}'>
+    <view class='backLogin-css'>
+      <view class='login-css'>
+      <image src='../image/memberAD.jpeg'></image>
+        <button class='btn-css' open-type='getUserInfo' bindgetuserinfo='getUserInfo'>授权登录</button>
+      </view>
+    </view>
+  </view>
+  <!-- 登录弹框end -->
+</view>

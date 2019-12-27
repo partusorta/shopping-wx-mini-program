@@ -1,0 +1,43 @@
+<!--pages/type/typeGoodsList.wxml-->
+<view>
+  <!-- 搜索 -->
+  <view class='search-css'>
+    <view class='inputView-css'>
+      <image src='../image/search.png'></image>
+      <input placeholder='搜索朋友圈的好货'></input>
+    </view>
+  </view>
+  <!-- 搜索end -->
+  <!-- 排序 -->
+  <view class='sort-css'>
+    <view class='{{sortType==1?"sortBarColor":"sortBar-css"}}' bindtap='tapAll'>全部</view>
+    <view class='{{sortType==2?"sortBarColor":"sortBar-css"}}' bindtap='tapSale'>销量</view>
+    <view class='{{sortType==3?"sortBarColor":"sortBar-css"}}' bindtap='tapPrice'>
+      <text>价格</text>
+      <image wx:if='{{sortPrice==0}}'class='sortImage-css' src='../image/none.png'></image>
+      <image wx:if='{{sortPrice==1}}'class='sortImage-css' src='../image/up.png'></image>
+      <image wx:if='{{sortPrice==2}}'class='sortImage-css' src='../image/down.png'></image>
+    </view>
+  </view>
+  <!-- 排序end -->
+  <!-- 商品 -->
+  <view class='goodList-css'>
+    <block wx:for='{{goodList}}' wx:key='{{index}}'>
+      <view wx:if="{{index%2 == 0}}" class='goodItem-css' bindtap='tapDetail'>
+        <image src='{{item.url}}' class='goodImg-css'></image>
+        <text>{{item.name}}</text>
+        <view class='bottom-css'>
+          <text>¥{{item.price}}</text>
+        </view>
+      </view>
+      <view wx:else class='goodItem-css' style='margin-left:10rpx;margin-right:20rpx' bindtap='tapDetail'>
+        <image src='{{item.url}}' class='goodImg-css'>{{item.url}}</image>
+        <text>{{item.name}}</text>
+        <view class='bottom-css'>
+          <text>¥{{item.price}}</text>
+        </view>
+      </view>
+    </block>
+  </view>
+  <!-- 商品end -->
+</view>

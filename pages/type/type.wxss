@@ -1,0 +1,64 @@
+/* pages/type/type.wxss */
+.search-css {
+  display: flex;
+  flex-direction: row;
+  height: 100rpx;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+
+.inputView-css {
+  margin-left: 3%;
+  width: 94%;
+  height: 70%;
+  border-radius: 50rpx;
+  /* background-color: green; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: solid 1rpx #62C9D8;
+}
+
+.inputView-css image {
+  width: 30rpx;
+  height: 30rpx;
+  margin-left: 30rpx;
+}
+
+.inputView-css input {
+  margin-left: 20rpx;
+  height: 50rpx;
+  width: 80%;
+  font-size: 25rpx;
+  color: #454545;
+}
+
+.type-css {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.item-css {
+  width: 180rpx;
+  height: 180rpx;
+  margin-bottom: 20rpx;
+  display: flex;
+  flex-direction: column;
+  font-size: 25rpx;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-css image {
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.item-css text {
+  margin-top: 10rpx;
+  color: #454545;
+}
+

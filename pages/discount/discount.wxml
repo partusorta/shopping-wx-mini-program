@@ -1,0 +1,6 @@
+<!--pages/discount/discount.wxml-->
+<view class='container'>
+  <view wx:for='{{itemList}}' wx:key='{{index}}' class='list-css'>
+    <image src='{{item.url}}'></image>
+  </view>
+</view>

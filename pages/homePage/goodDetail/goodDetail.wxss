@@ -1,0 +1,222 @@
+/* pages/homePage/goodDetail/goodDetail.wxss */
+/* 商品图片 */
+.goodImg-css {
+  width: 100%;
+  height: 600rpx;
+}
+/* 商品标题 */
+.goodTitle-css {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: -10rpx;
+}
+/* 商品价格 */
+.price-css {
+  margin-left: 30rpx;
+  margin-top: 30rpx;
+  font-size: 40rpx;
+  font-weight: 600;
+  color: #FA494D
+}
+/* 商品详情 */
+.detail-css {
+  margin-top: 15rpx;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+/* 商品详情四个字 */
+.detail-css text {
+  margin-left: 30rpx;
+  margin-top: 20rpx;
+  margin-bottom: 30rpx;
+  font-size: 28rpx;
+  color: gray;
+}
+/* 商品详情图片组 */
+.detail-css image {
+  width: 100%;
+}
+/* 商品详情图片组 */
+.imageList-css {
+  display: flex;
+  flex-direction: column;
+}
+/* 底部条 */
+.submit-css {
+  position: fixed;
+  top: calc(100% - 120rpx);
+  width: 100%;
+  height: 120rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
+}
+/* 购物车背景 */
+.shoppingCart-css {
+  width: 100rpx;
+  height: 100rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* 购物车图标 */
+.shoppingCart-css image {
+  width: 70rpx;
+  height: 70rpx;
+}
+/* 购物车三个字 */
+.shoppingCart-css text {
+  font-size: 20rpx;
+  color: gray;
+  margin-left: 10rpx;
+}
+/* 购物车红点 */
+.redPoint-css {
+  width: 20rpx;
+  height: 20rpx;
+  background-color: #FA494D;
+  border-radius: 10rpx;
+  position: absolute;
+  top: 15rpx;
+  left: 14%;
+}
+/* 下面俩按钮 */
+.buy-css {
+  width: 75%;
+  height: 84rpx;
+  border-radius: 42rpx;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+}
+/* 按钮 */
+.btn-css {
+  width: 50%;
+  height: 100%;
+  font-size: 30rpx;
+  font-weight: 600;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* 弹窗背景 */
+.backShoppingCart-css {
+  width: 100%;
+  height: 400rpx;
+  background-color: white;
+  position: fixed;
+  top: calc(100% - 400rpx);
+  display: flex;
+  flex-direction: column;
+}
+/* 蒙板 */
+.maskLayer-css {
+  width: 100%;
+  height: calc(100% - 120rpx);
+  top: 0;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+/*  */
+.backShoppingCartTop-css {
+  width: 100%;
+  height: 300rpx;
+  background-color: gray;
+  display: flex;
+  flex-direction: row;
+}
+/*  */
+.goodImgIconBack {
+  width: 200rpx;
+  height: 200rpx;
+  margin-left: 30rpx;
+  margin-top: -30rpx;
+  border-radius: 12rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f8f8;
+}
+/*  */
+.goodImgIconBack image {
+  width: 85%;
+  height: 85%;
+}
+/*  */
+.cartName-css {
+  margin-left: 30rpx;
+  margin-top: 30rpx;
+  font-size: 28rpx;
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.cartPrice-css {
+  margin-left: 30rpx;
+  margin-top: 15rpx;
+  color: #FA494D
+}
+
+.bottomBtn-css {
+  margin-left: 5%;
+  margin-top: 20rpx;
+  width: 90%;
+  height: 85rpx;
+  color: white;
+  border-radius: 42.5rpx;
+  text-align: center;
+  line-height: 85rpx;
+  font-weight: 600;
+}
+/*  */
+.bottomBtnOrange {
+  background-color: #FDA34D;
+}
+/*  */
+.bottomBtnRed {
+  background-color: #F94246;
+}
+/*  */
+.right-css {
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+/*  */
+.right-css text {
+  margin-left: 30rpx;
+  font-size: 26rpx;
+  color: #454545;
+  flex: 0.93;
+}
+/*  */
+.num-btn {
+  width: 50rpx;
+  height: 50rpx;
+}
+/*  */
+.item-num {
+  width: 50rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 30rpx;
+  text-align: center;
+}
+
+
+

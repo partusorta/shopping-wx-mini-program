@@ -1,0 +1,69 @@
+<!--pages/homePage/goodDetail/goodDetail.wxml-->
+<view style='background-color:#f7f7f7;'>
+  <image class='goodImg-css' mode='aspectFill' src='../../image/1.jpg'>
+  </image>
+  <!-- 商品基本信息 -->
+  <view class='goodTitle-css'>
+    <text class='price-css'>¥36.00</text>
+    <view style='width:94%;margin-left:30rpx;margin-top:15rpx; margin-bottom:30rpx;'>
+      <text style='font-size:30rpx;'>优乐益生菌250幼犬、幼猫必选必买关爱宠物健康</text>
+    </view>
+  </view>
+  <!-- 商品基本信息end -->
+  <!-- 商品详情 -->
+  <view class='detail-css'>
+    <text>商品详情</text>
+    <view class='imageList-css' wx:for='{{detailImg}}' wx:key='{{index}}'>
+      <image src='{{item}}' mode='widthFix'></image>
+    </view>
+  </view>
+  <!-- 商品详情end -->
+  <!-- 结算按钮 -->
+  <view class='submit-css'>
+    <view class='shoppingCart-css' bindtap='tapShoppingCart'>
+      <image src='../../image/shoppingCart.png'></image>
+      <text>购物车</text>
+      <view wx:if='{{isShowPoint}}' class='redPoint-css'></view>
+    </view>
+    <view class='buy-css'>
+      <view class='btn-css' style='background-color:#FDA34D' bindtap='tapCart'>
+        <text>加入购物车</text>
+      </view>
+      <view class='btn-css' style='background-color:#F94246' bindtap='tapGoBuy'>
+        <text>立即购买</text>
+      </view>
+    </view>
+  </view>
+  <!-- 结算按钮end -->
+  <!-- 弹框 -->
+  <!-- 蒙板 -->
+  <view class='maskLayer-css' wx:if="{{chooseSize}}" bindtap='hideModal' animation='{{maskAnimationData}}'></view>
+  <!-- 蒙板end -->
+  <view class='backShoppingCart-css' wx:if='{{chooseSize}}' animation='{{animationData}}'>
+    <!-- 图片、名称、价格 -->
+    <view style='display: flex;flex-direction: row;'>
+      <view class='goodImgIconBack'>
+        <image src='../../image/1.jpg'></image>
+      </view>
+      <view style='display: flex;flex-direction: column; width: 65%'>
+        <text class='cartName-css'>优乐益生菌250幼犬、幼猫必选必买哈哈哈哈优乐益生菌250幼犬优乐益生菌250幼犬、幼猫必选必买哈哈哈哈优乐益生菌250幼犬</text>
+        <text class='cartPrice-css'>¥36.00</text>
+      </view>
+    </view>
+    <!-- 图片、名称、价格end -->
+    <!-- 加减 -->
+    <view class='right-css'>
+      <text>购买数量</text>
+      <image disabled='{{isNotAdd}}' src='../../image/add0.png' data-type='2' data-index='{{index}}' class='num-btn' bindtap='numReducet'></image>
+      <view class='item-num'>{{goodNum}}</view>
+      <image src='../../image/add1.png' data-type='1' data-index='{{index}}' class='num-btn' bindtap='numAdd'></image>
+    </view>
+    <!-- 加减end -->
+    <!-- 确认 -->
+    <view class="bottomBtn-css {{isAddShoppingCart?'bottomBtnOrange':'bottomBtnRed'}}" bindtap='tapSubmit'>
+      <text>{{isAddShoppingCart?"确定":"下一步"}}</text>
+    </view>
+    <!-- 确认end -->
+  </view>
+  <!-- 弹框end -->
+</view>

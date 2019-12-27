@@ -1,0 +1,49 @@
+/* pages/mine/member/member'.wxss */
+.memberImg-css {
+  margin-left:5%;
+  margin-top:30rpx;
+  width:90%;
+  height:200rpx;
+  background-color:#f7f7f7;
+  border-radius:12rpx;
+  overflow: hidden
+}
+
+.word-css {
+  position: absolute;
+  top: 7%;
+  left: 10%;
+  color: white;
+  font-size: 30rpx;
+}
+
+.title-css {
+  height: 80rpx;
+  margin-left:30rpx; 
+  margin-top:40rpx;
+  font-size: 29rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.vir-css {
+  width: 7rpx;
+  height: 30rpx;
+  background-color: #62C9D8;
+  margin-right: 15rpx;
+}
+
+.listItem-css {
+  margin-left: 30rpx;
+  padding-right: 30rpx;
+  height: 130rpx;
+  display: flex;
+  flex-direction: row;
+  font-size: 27rpx;
+  justify-content: center;
+  align-items: center;
+  color: #454545;
+}
+
+

@@ -1,0 +1,19 @@
+<!--pages/mine/member/member'.wxml-->
+<view style='background-color:white;'>
+  <image class='memberImg-css'></image>
+  <text class='word-css'>当前积分</text>
+  <text class='word-css' style='top:12%'>180.0分</text>
+  <view class='title-css'>
+    <view class='vir-css'></view>
+    <text>积分明细</text>
+  </view>
+  <view wx:for='{{list}}' wx:key='{{index}}'>
+    <view class='listItem-css'>
+      <view style='display:flex;flex-direction:column;flex:1'>
+        <text>{{item.title}}</text>
+        <text style='font-size:25rpx;color:gray'>2019-10-23</text>
+      </view>
+      <text style='color:#62C9D8'>{{item.point}}</text>
+    </view>
+  </view>
+</view>

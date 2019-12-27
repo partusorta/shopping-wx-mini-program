@@ -1,0 +1,77 @@
+<!--pages/mine/goodsOrder/orderDetail/orderDetail.wxml-->
+<view>
+  <!-- 地址信息 -->
+  <view class='addr-css'>
+    <image class='icon-css' src='../../../image/mine/addr-icon.png'></image>
+    <view class='left-css' wx:if='{{orderDetail.linkName != undefined}}'>
+      <text class='line-css' style='margin-left:0rpx' decode='emsp'>{{ orderDetail.linkName + "&emsp;" + orderDetail.linkPhone}}
+</text>
+      <text class='line-css' style='margin-left:0rpx;'>{{ orderDetail.linkAddress}}</text>
+    </view>
+  </view>
+  <image src='../../../image/mine/bar-color.png' style='width:100%; height:8rpx;'></image>
+  <!-- 地址信息end -->
+  <!-- 商品信息 -->
+  <!-- <view class='header-css'> -->
+  <!-- <image class='icon-css' src='../../image/mine/store.png'></image> -->
+  <!-- <text style='flex:0.95'>{{orderDetail.storeName}}</text> -->
+  <!-- <text style='color:#00c68e'>{{orderDetail.orderStatusDes}}</text>
+  </view> -->
+  <view class='bottom-css' wx:for='{{orderDetail.goodsItem}}' wx:key='{{index}}'>
+    <image class='image-css' src='{{item.drugImage}}' mode='aspectFill'></image>
+    <view class='right-css'>
+      <view class='text-css'>
+        <text style='flex:0.95' class='goods-title'>{{item.drugName}}</text>
+        <text style='color:gray;height:55rpx;'>¥{{item.drugPrice}}</text>
+      </view>
+      <view class='text-css' style='color:gray'>
+        <text style='flex:0.95'>袋</text>
+        <text>x {{item.drugNum}}</text>
+      </view>
+    </view>
+  </view>
+  <view class='total-css' wx:if='{{orderDetail.freight != "0.00"}}'>
+    <text style='margin-left:77%;margin-right:20rpx'>配送费</text>
+    <text>¥{{orderDetail.freight}}</text>
+  </view>
+  <view class='total-css' style='font-size: 28rpx'>
+    <text style='margin-left:20%;flex:0.94'>共计 {{orderDetail.goodsNum}} 件商品</text>
+    <text style='margin-left:20rpx;'>总计</text>
+    <text class='price'>¥{{orderDetail.totalPrice}}</text>
+  </view>
+  <!-- 商品信息end -->
+  <!-- 配送信息 -->
+  <view class='item-css' style='height:220rpx;'>
+    <view class='title-css'>
+      <view class='vert-css'></view>
+      <text>配送信息</text>
+    </view>
+    <view class='line-css'>
+      <text style='flex:0.95'>配送方式</text>
+      <text>{{orderDetail.courierCompany}}</text>
+    </view>
+    <view class='line-css'>
+      <text style='flex:0.95'>快递单号</text>
+      <text>{{orderDetail.trackingNo}}</text>
+    </view>
+  </view>
+  <!-- 配送信息 -->
+  <!-- 订单信息 -->
+  <view class='item-css' style='border-bottom:none;height:auto'>
+    <view class='title-css'>
+      <view class='vert-css'></view>
+      <text>订单信息</text>
+    </view>
+    <text class='line-css' decode='emsp'>订单编号&emsp;{{orderDetail.orderNo}}</text>
+    <text class='line-css' decode='emsp'>创建时间&emsp;{{orderDetail.createTime}}</text>
+    <text class='line-css' decode='emsp'>支付时间&emsp;{{orderDetail.payTime}}</text>
+    <text wx:if='{{orderDetail.deliveryTime != null}}' class='line-css' decode='emsp'>发货时间&emsp;{{orderDetail.deliveryTime}}</text>
+    <text wx:if='{{orderDetail.receiptTime != null}}' class='line-css' decode='emsp'>完成时间&emsp;{{orderDetail.receiptTime}}</text>
+  </view>
+  <!-- 订单信息end -->
+  <!-- 确认收货 -->
+  <view class='btn-css' wx:if='{{orderDetail.deliveryStatus==2}}' bindtap='bindGotGoods'>
+    <text class='btn-text-css' bindtap='tapAdd'>确认收货</text>
+  </view>
+  <!-- 确认收货end -->
+</view>

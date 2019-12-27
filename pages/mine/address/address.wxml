@@ -1,0 +1,25 @@
+<!--pages/mine/address/address.wxml-->
+<scroll-view class='container' scroll-y style='height:85%;position: absolute;background-color:white'>
+  <view class='item-css' wx:for='{{dataList}}' wx:key='{{index}}'>
+    <view class='left-css' bindtap='tapIndex' data-name='{{item.receiptName}}' data-phone='{{item.receiptPhone}}' data-addr='{{item.receiptAddress}}' data-addrid='{{item.id}}'>
+      <view class='top-css'>
+        <text wx:if='{{item.state == 1}}' class='default'>默认</text>
+        <text style='margin-right:20rpx; font-size:30rpx;'>{{item.receiptName}}</text>
+        <text style='font-size:25rpx;color:gray'>{{item.receiptPhone}}</text>
+      </view>
+      <view class='bottom-css'>
+        <text class='addr-css'>{{item.receiptAddress}}</text>
+      </view>
+    </view>
+    <view class='edit-css' bindtap='tapEdit' data-name='{{item.receiptName}}' data-phone='{{item.receiptPhone}}' data-addr='{{item.receiptAddress}}' data-addrid='{{item.id}}' data-state='{{item.state}}'>
+      <text>编辑</text>
+    </view>
+  </view>
+</scroll-view>
+<view class='no-date' style='top:calc(50% - 200rpx)' wx:if='{{isShow}}'>
+  <image src='../../image/nodate.png' mode='aspectFit'></image>
+  <text>暂无数据</text>
+</view>
+<view class='btn-css'>
+  <text class='text-css' bindtap='tapAdd'>新增地址</text>
+</view>

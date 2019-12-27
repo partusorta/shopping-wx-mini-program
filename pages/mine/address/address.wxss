@@ -1,0 +1,84 @@
+/* pages/mine/address/address.wxss */
+
+.item-css {
+  width: 100%;
+  height: 200rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 28rpx;
+  color: #454545;
+}
+
+.left-css {
+  margin-left: 30rpx;
+  margin-right: 25rpx;
+  width: 75%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.edit-css {
+  width: 18%;
+  height: 40rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: solid 1rpx lightgray;
+  line-height: 40rpx;
+  font-size: 30rpx;
+  color: gray;
+}
+
+.top-css {
+  margin-bottom: 10rpx;
+  display: flex;
+  align-items: center;
+}
+
+.bottom-css {
+  display: flex;
+  flex-direction: row;
+}
+
+.addr-css {
+  width: 100%;
+  display: -webkit-box;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.default {
+  padding: 5rpx 10rpx 5rpx 10rpx;
+  margin-right: 15rpx;
+  background-color: #e0f8e9;
+  color: #62C9D8;
+  font-size: 25rpx;
+}
+
+.btn-css {
+  top: 85%;
+  position: fixed;
+  width: 100%;
+  height: 150rpx;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-css {
+  width: 90%;
+  height: 90rpx;
+  background-color: #62C9D8;
+  border-radius: 12rpx;
+  text-align: center;
+  line-height: 90rpx;
+  color: white;
+  font-size:30rpx;
+}

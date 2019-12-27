@@ -1,0 +1,32 @@
+<!--pages/type/type.wxml-->
+<!-- 搜索 -->
+<view class='search-css'>
+  <view class='inputView-css'>
+    <image src='../image/search.png'></image>
+    <input placeholder='搜索朋友圈的好货'></input>
+  </view>
+</view>
+<!-- 搜索end -->
+<text style='font-size:27rpx;color:#62C9D8;margin-left:30rpx;'>常用分类</text>
+<view class='type-css'>
+  <view class='item-css' bindtap='tapTypeList'>
+    <image src='../image/11.jpg' mode='aspectFit'></image>
+    <text>宠物食品</text>
+  </view>
+  <view class='item-css'>
+    <image src='../image/22.jpg' mode='aspectFit'></image>
+    <text>宠物保健品</text>
+  </view>
+  <view class='item-css'>
+    <image src='../image/33.jpg' mode='aspectFit'></image>
+    <text>宠物护理</text>
+  </view>
+  <view class='item-css'>
+    <image src='../image/44.jpg' mode='aspectFit'></image>
+    <text>宠物用品</text>
+  </view>
+  <view class='item-css'>
+    <image src='../image/55.jpg' mode='aspectFit'></image>
+    <text>宠物玩具</text>
+  </view>
+</view>

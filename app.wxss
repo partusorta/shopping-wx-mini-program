@@ -1,0 +1,30 @@
+/**app.wxss**/
+.container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f7f7f7;
+} 
+
+.no-date{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: calc(50% - 110rpx);
+  top: calc(50% - 100rpx);
+}
+.no-date image{
+  width: 220rpx;
+  height: 200rpx;
+}
+.no-date text{
+  font-size: 30rpx;
+  color: gray;
+  line-height: 60rp;
+  margin-top: 30rpx;
+}

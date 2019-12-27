@@ -1,0 +1,43 @@
+<!--pages/homePage/createOrder/createOrder.wxml-->
+<view class='order-container'>
+  <view class='order-address'>
+    <view class='detail-title'>订单地址</view>
+    <view class='left-css' bindtap='tapAddr' wx:if='{{addressId != 0}}'>
+      <view class='top-css'>
+        <text style='margin-right:20rpx; font-size:28rpx;'>{{name}}</text>
+        <text style='font-size:25rpx;color:gray;flex:1'>{{phone}}</text>
+        <image src='../../image/next.png' mode='aspectFit'></image>
+      </view>
+      <view class='addrBottom-css'>
+        <text class='addr-css'>{{addr}}</text>
+      </view>
+    </view>
+    <view wx:else class='top-css' bindtap='tapAddr'>
+      <text style='flex:0.95;font-size:30rpx;'>请先添加地址</text>
+      <image src='../../../image/next.png' mode='aspectFit' style='width:25rpx;height:35rpx;'></image>
+    </view>
+  </view>
+  <view class='order-detail'>
+    <view class='detail-title'>订单信息</view>
+    <view wx:for='{{goods}}' class='goods-item' wx:key='{{index}}'>
+      <image src='{{item.url}}'></image>
+      <view style='display: flex; flex-direction:column; width:70%'>
+        <view class='goods-name'>
+          <text>{{item.goodsName}}</text>
+        </view>
+        <view class='goods-count'>X{{item.goodsNum}}</view>
+        <view class='goods-price'>￥{{item.goodsPrice}}</view>
+      </view>
+    </view>
+  </view>
+  <view class='order-detail' style='border-bottom:none'>
+    <view class='detail-title'>
+      <view class='title-left'>配送费</view>
+      <view class='title-right' style='color:#454545'>￥{{roadPrice}}</view>
+    </view>
+  </view>
+  <view class='bottom'>
+    <view class='bottom-total'>总计：￥{{total}}</view>
+    <view class='bottom-topay' bindtap='toOrder'>确认支付</view>
+  </view>
+</view>

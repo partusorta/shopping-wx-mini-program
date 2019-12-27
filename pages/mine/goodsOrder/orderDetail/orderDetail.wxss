@@ -1,0 +1,162 @@
+/* pages/mine/goodsOrder/orderDetail/orderDetail.wxss */
+.left-css {
+  width: 85%;
+}
+
+.row-css {
+  height: 55rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.addr-css {
+  height: auto;
+  padding-top: 20rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.store-css {
+  height: 100rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 28rpx;
+  color: gray;
+}
+
+.item-css {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  border-bottom: solid 15rpx #f7f7f7;
+}
+
+.title-css {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100rpx;
+  font-size: 30rpx;
+  color: gray;
+}
+
+.line-css {
+  margin-left: 50rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 28rpx;
+  color: #454545;
+  margin-bottom: 10rpx;
+}
+
+.vert-css {
+  margin-left: 30rpx;
+  margin-right: 15rpx;
+  height: 35rpx;
+  width: 4rpx;
+  background-color: #62C9D8;
+}
+
+.header-css {
+  height: 110rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 28rpx;
+  color: #454545;
+}
+
+.icon-css {
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 20rpx;
+  margin-left: 30rpx;
+}
+
+.bottom-css {
+  margin-top: 10rpx;
+  display: flex;
+  flex-direction: row;
+  font-size: 28rpx;
+}
+
+.image-css {
+  width: 140rpx;
+  height: 140rpx;
+  background-color: #f7f7f7;
+  margin-right: 30rpx;
+  margin-left: 30rpx;
+  margin-bottom: 35rpx;
+}
+
+.right-css {
+  width: 70%;
+  height: 155rpx;
+  display: flex;
+  flex-direction: column;
+  border-bottom: solid 1rpx lightgray;
+  color: #454545;
+}
+
+.text-css {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  line-height: 50rpx;
+}
+.goods-title {
+  display: -webkit-box;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  line-height: 50rpx;
+}
+
+.total-css {
+  width: auto;
+  height: 80rpx;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: -15rpx;
+  font-size: 28rpx;
+  border-bottom: solid 15rpx #f7f7f7;
+  color: #454545;
+}
+
+ .btn-css {
+  margin-top: 30rpx;
+  width: 100%;
+  height: 150rpx;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-text-css {
+  width: 90%;
+  height: 90rpx;
+  background-color: #00c68e;
+  border-radius: 12rpx;
+  text-align: center;
+  line-height: 90rpx;
+  color: white;
+  font-size:30rpx;
+} 
+
+.price {
+  text-align: right;
+  widows: auto;
+  margin-left: 10rpx;
+  color: #fc7146;
+}

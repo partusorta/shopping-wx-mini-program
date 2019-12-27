@@ -1,0 +1,55 @@
+<!--pages/mine/goodsOrder/goodsOrder.wxml-->
+<view>
+<!-- 滚动菜单 -->
+  <scroll-view scroll-x scrollLeft='{{scrollLeft}}' scroll-with-animation>
+    <view class='bar-css'>
+      <view class='{{state==0?"bar-item-color":"bar-item-css"}}' bindtap='tapStatus' data-index='0'>
+        <text>待付款</text>
+      </view>
+      <view class='{{state==1?"bar-item-color":"bar-item-css"}}' bindtap='tapStatus' data-index='1'>
+        <text>待发货</text>
+      </view>
+      <view class='{{state==2?"bar-item-color":"bar-item-css"}}' bindtap='tapStatus' data-index='2'>
+        <text>待支付</text>
+      </view>
+      <view class='{{state==3?"bar-item-color":"bar-item-css"}}' bindtap='tapStatus' data-index='3'>
+        <text>待评价</text>
+      </view>
+      <view class='{{state==4?"bar-item-color":"bar-item-css"}}' bindtap='tapStatus' data-index='4'>
+        <text>退款/售后</text>
+      </view>
+    </view>
+    <view class='line-css' animation='{{animationData}}'>
+    </view>
+  </scroll-view>
+<!-- 滚动菜单end -->
+  <view wx:for='{{orderList}}' wx:key='{{index}}' class='item-css' bindtap='bindOrderDetail' data-id='{{item.orderId}}' data-type='{{item.pickUpWay}}' data-index='{{index}}'>
+    <!-- <view class='header-css'>
+      <image class='icon-css' src='../../image/mine/store.png'></image>
+      <text style='flex:0.95'>店名</text>
+      <text style='color:#00c68e'>订单状态</text>
+    </view> -->
+    <view class='bottom-css' wx:for='{{item.goodsItems}}' wx:key='{{index}}' wx:for-item='item2'>
+      <image class='image-css' src='{{item2.drugImage}}' mode='aspectFill'></image>
+      <view class='right-css'>
+        <view class='text-css'>
+          <text class='goods-title'>优乐益生菌250幼犬、幼猫必选必买哈哈哈哈优乐益生菌250幼犬优乐益生菌250幼犬、幼猫必选必买哈哈哈哈优乐益生菌250幼犬</text>
+          <text style='color:gray'>¥12.00</text>
+        </view>
+        <view class='text-css' style='color:gray'>
+          <text style='flex:1'>20g/袋</text>
+          <text>x 3</text>
+        </view>
+      </view>
+    </view>
+    <view class='total-css' style='font-size: 28rpx'>
+      <text style='margin-left:20%;flex:0.93'>共计 1 件商品</text>
+      <text style='margin-left:20rpx;'>总计</text>
+      <text class='price'>¥131.00</text>
+    </view>
+  </view>
+</view>
+<view class='no-date' wx:if='{{isShow}}'>
+  <image src='../../image/nodate.png' mode='aspectFit'></image>
+  <text>暂无数据</text>
+</view>

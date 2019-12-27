@@ -1,0 +1,57 @@
+{
+  "pages": [
+    "pages/homePage/homePage",
+    "pages/homePage/goodDetail/goodDetail",
+    "pages/discount/discount",
+    "pages/shoppingCart/shoppingCart",
+    "pages/discount/discountDetail",
+    "pages/type/type",
+    "pages/type/typeGoodsList",
+    "pages/mine/mine",
+    "pages/homePage/createOrder/createOrder",
+    "pages/mine/goodsOrder/goodsOrder",
+    "pages/mine/address/address",
+    "pages/mine/address/editAddr/editAddr",
+    "pages/mine/coupon/coupon",
+    "pages/mine/member/member",
+    "pages/mine/goodsOrder/orderDetail/orderDetail",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#62C9D8",
+    "navigationBarTitleText": "宠物商城",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor": "#66b4b7",
+    "color": "#000",
+    "list": [
+      {
+        "pagePath": "pages/homePage/homePage",
+        "text": "商城",
+        "iconPath": "pages/image/tab/noindex.png",
+        "selectedIconPath": "pages/image/tab/index.png"
+      },
+      {
+        "pagePath": "pages/discount/discount",
+        "text": "发现",
+        "iconPath": "pages/image/tab/noorder.png",
+        "selectedIconPath": "pages/image/tab/order.png"
+      },
+      {
+        "pagePath": "pages/shoppingCart/shoppingCart",
+        "text": "购物车",
+        "iconPath": "pages/image/tab/nocart.png",
+        "selectedIconPath": "pages/image/tab/cart.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "pages/image/tab/nomine.png",
+        "selectedIconPath": "pages/image/tab/mine.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

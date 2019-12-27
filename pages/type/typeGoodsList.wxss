@@ -1,0 +1,122 @@
+/* pages/type/typeGoodsList.wxss */
+.search-css {
+  display: flex;
+  flex-direction: row;
+  height: 100rpx;
+  /* background-color: lightblue; */
+  align-items: center;
+}
+
+.inputView-css {
+  margin-left: 5%;
+  width: 90%;
+  height: 70%;
+  border-radius: 50rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: solid 1rpx #62C9D8;
+}
+
+.inputView-css image {
+  width: 30rpx;
+  height: 30rpx;
+  margin-left: 30rpx;
+}
+
+.inputView-css input {
+  margin-left: 20rpx;
+  height: 50rpx;
+  width: 80%;
+  font-size: 25rpx;
+}
+
+.sort-css {
+  height: 80rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  line-height: 80rpx;
+  font-size: 28rpx;
+  color: gray;
+}
+
+.sortBar-css {
+  text-align: center;
+  width: 33.3%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center
+}
+
+.sortBarColor {
+  text-align: center;
+  width: 33.3%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: #62C9D8;
+}
+
+.sortImage-css  {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+/* 商品列表 */
+.goodList-css {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #f7f7f7;
+  padding-bottom: 20rpx;
+}
+
+.goodItem-css {
+  width: calc(50% - 30rpx);
+  height: 500rpx;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  margin-right: 10rpx;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 12rpx;
+  overflow:hidden;
+}
+
+.goodItem-css image {
+  width: 100%;
+  height: 350rpx;
+  background-color: #f7f7f7;
+}
+
+.goodItem-css text {
+  margin-top: 10rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  font-size: 26rpx;
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+/* 商品框底部布局，有可能增加销量 */
+.bottom-css {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.bottom-css text {
+  color: #FA494D;
+  font-size: 30rpx;
+}

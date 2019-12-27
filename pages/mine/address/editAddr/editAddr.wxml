@@ -1,0 +1,24 @@
+<!--pages/mine/address/editAddr/editAddr.wxml-->
+<view class='view-css'>
+  <view class='item-css'>
+    <input placeholder='请填写收货人姓名' bindinput='bindName' value='{{name}}' maxlength='5'></input>
+  </view>
+  <view class='item-css'>
+    <input placeholder='请填写收货人电话' bindinput='bindPhone' type='number'  maxlength='11' value='{{phone}}'></input>
+  </view>
+  <view class='addr-css'>
+    <textarea class='area' placeholder='请输入您的详细地址' value='{{addr}}' maxlength='50' bindinput='bindAddr'></textarea>
+  </view>
+  <view class='item-css' style='padding-top:10rpx;' wx:if='{{!hiddenDefault}}'>
+    <text style='flex:0.95;color:#62C9D8'>设置为默认地址</text>
+    <view class="switch_css">
+      <switch bindchange="switch2Change" color='#62C9D8' checked='{{isDefault}}' />
+    </view>
+  </view>
+  <view class='item-css' style='padding-top:20rpx;' wx:if='{{isEdit}}'>
+    <text style='color:#F3504F' bindtap='tapDelete'> 删除收货地址</text>
+  </view>
+  <view class='btn-css'>
+    <text class='text-css' bindtap='bindSubmit'>确认提交</text>
+  </view>
+</view>

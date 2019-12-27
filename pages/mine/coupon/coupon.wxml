@@ -1,0 +1,5 @@
+<!--pages/mine/coupon/coupon.wxml-->
+<view class='no-date' wx:if='{{isShow}}'>
+  <image src='../../image/nodate.png' mode='aspectFit' ></image>
+  <text>暂时没有优惠券</text>
+</view>

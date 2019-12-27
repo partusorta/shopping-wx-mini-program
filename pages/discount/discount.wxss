@@ -1,0 +1,14 @@
+/* pages/discount/discount.wxss */
+.list-css {
+  width: 92%;
+  height: 400rpx;
+  border-radius: 12rpx;
+  background-color: white;
+  margin-top: 30rpx;
+  overflow: hidden;
+}
+
+.list-css image {
+  width: 100%;
+  height: 100%;
+}
